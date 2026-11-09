@@ -1,0 +1,20 @@
+{
+  "name": "mikrotik-mcp-js",
+  "version": "0.2.0",
+  "description": "An original JavaScript MCP server for broad MikroTik RouterOS monitoring and guarded configuration management.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1164.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "ssh2": "^1.17.0",
+    "zod": "^4.6.7"
+  }
+}

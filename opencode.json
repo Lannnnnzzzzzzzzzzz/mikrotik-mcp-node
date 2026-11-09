@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "mikrotik-mcp-js": {
+        "type": "local",
+        "command": ["node", "src/server.js"],
+        "cwd": ".",
+        "environment": {
+          "MIKROTIK_ROUTERS_JSON": "",
+          "MIKROTIK_HOST": "",
+          "MIKROTIK_USERNAME": "",
+          "MIKROTIK_PASSWORD": "",
+          "MIKROTIK_ALLOW_WRITES": "false",
+          "MIKROTIK_ALLOW_HIGH_RISK_WRITES": "false",
+          "MIKROTIK_ALLOW_ACTIVE_DIAGNOSTICS": "false",
+          "MIKROTIK_ALLOW_DESTRUCTIVE_OPERATIONS": "false",
+          "MIKROTIK_SUPPORT_BUNDLE_ENABLED": "false",
+          "MIKROTIK_ALERT_SERVICE_ENABLED": "false",
+          "MIKROTIK_ALERT_SERVICE_AUTOSTART": "false",
+          "MIKROTIK_ALERT_WEBHOOK_ENABLED": "false",
+          "MIKROTIK_TZSP_RECEIVER_ENABLED": "false",
+          "MIKROTIK_TZSP_AUTOMATION_ENABLED": "false",
+          "MIKROTIK_S3_ENABLED": "false",
+          "MIKROTIK_S3_ALLOW_LISTING": "false",
+          "MIKROTIK_S3_ALLOW_DELETE": "false",
+          "MIKROTIK_S3_ALLOW_VERSION_PURGE": "false",
+          "MIKROTIK_DASHBOARD_ENABLED": "false"
+        }
+      }
+    }
+  }
+}
